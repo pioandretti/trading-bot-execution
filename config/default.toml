@@ -1,0 +1,22 @@
+[brain]
+# Brain server API endpoint (via WireGuard VPN)
+url = "http://10.0.0.1:8000"
+# Must match INTERNAL_API_KEY on Server 1
+api_key = "CHANGE_ME"
+poll_interval_ms = 500
+
+[bitget]
+api_key = "CHANGE_ME"
+secret_key = "CHANGE_ME"
+passphrase = "CHANGE_ME"
+base_url = "https://api.bitget.com"
+
+[execution]
+max_retries = 3
+retry_delay_ms = 200
+max_slippage_pct = 0.5
+dry_run = true
+
+[logging]
+level = "info"
+json = false
